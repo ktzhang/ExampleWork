@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+	    <Button 
+	         android:id="@+id/listViewBackBtn"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:gravity="right"
+	         android:layout_marginRight="5dp"
+	         android:text="Go Back" />	
+    </LinearLayout>  
+      
+    <TabHost
+        android:id="@+id/myTabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/locationTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" 
+                    android:orientation="vertical" >
+                    <ListView
+                        android:id="@+id/location_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/categoryTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >                   
+                    <ListView
+                        android:id="@+id/category_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/recurringTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ListView
+                        android:id="@+id/recurring_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+                </LinearLayout>
+                
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

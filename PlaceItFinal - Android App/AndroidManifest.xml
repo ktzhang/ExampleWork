@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.ucsd.placeit"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="your tests label"
+        android:targetPackage="edu.ucsd.placeit" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- The following permissions are for various Google API access and Google services -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="edu.ucsd.placeit.main.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="edu.ucsd.placeit.main.Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="edu.ucsd.placeit.service.LocationService" />
+
+        <!-- Google Map API Key Declaration -->
+ 		<meta-data 
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyB9QdY2SXd9-6lWCI821_KYO6fg5E9ljPc" />
+ 		
+        <!--
+        Please copy paste the meta-data block corresponding to your device into the space above.
+		Kevin Zhang
+		<meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyC_rsiuu4d49xvQt9QgMz2xjb4bwqN6oZw" />
+            
+		Frankie Liu Desktop
+        <meta-data 
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCfSI95zOsw2gjQ4fv8oXQ9oQ2rG96EPVM" />
+            
+		Frankie Liu MacBook
+ 		<meta-data 
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyB9QdY2SXd9-6lWCI821_KYO6fg5E9ljPc" />
+          
+        Alex
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBfyzXQCsoDhVoJSndtVVt74SCn2aBrQKQ" />
+            
+            
+        Add new ones here...  
+        -->
+    </application>
+
+</manifest>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >    
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_cat_pi_title"
+            android:gravity="center" 
+            android:textSize="20sp"/>      
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_pi_name"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        <EditText
+            android:id="@+id/new_task_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="task name.." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_pi_des"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >      
+    	<EditText
+    	    android:id="@+id/new_task_description"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="left"
+    	    android:inputType="text"
+    	    android:lines="2" />    
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" 
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_pi_category"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="0dp"
+	    android:orientation="horizontal" >
+	    <DatePicker
+	        android:id="@+id/new_task_effective_date"
+	        android:layout_width="300dp"
+	        android:layout_height="140dp"
+	        android:calendarViewShown="false"
+	        android:scaleX="0.65"
+	        android:scaleY="0.65" />
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" 
+        android:orientation="vertical" >
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+            <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="@string/category_1" />
+            <Spinner 
+		    	android:id="@+id/new_task_category_1"
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content" />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+            <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="@string/category_2" />
+            <Spinner 
+		    	android:id="@+id/new_task_category_2"
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content" />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+            <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="@string/category_3" />
+            <Spinner 
+		    	android:id="@+id/new_task_category_3"
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    
+<!--     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal" >		
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/new_pi_repost"
+            android:textAppearance="?android:attr/textAppearanceSmall" />		
+		<Spinner 
+		    android:id="@+id/new_task_repost"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" />		
+	</LinearLayout> -->
+        
+    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="0dp"
+	        android:orientation="horizontal" >
+		<Button
+		    android:id="@+id/new_task_submit"
+		    style="?android:attr/buttonStyleSmall"
+		    android:layout_width="wrap_content"
+		    android:layout_height="40dp"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp"
+		    android:text="@string/submit" />	
+		<Button
+		    android:id="@+id/new_task_cancel"
+		    style="?android:attr/buttonStyleSmall"
+		    android:layout_width="wrap_content"
+		    android:layout_height="40dp"
+		    android:layout_marginLeft="6dp"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp"
+		    android:text="@string/cancel" />
+	</LinearLayout>
+</LinearLayout>

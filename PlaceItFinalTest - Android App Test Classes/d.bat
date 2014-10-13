@@ -1,0 +1,1 @@
+C:\Users\Kevin\android-sdks\tools\android create uitest-project -n PlaceItFinalTest -t 1 -p C:\Javastuff2\PlaceIt\PlaceItFinal
